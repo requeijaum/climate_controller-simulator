@@ -1,5 +1,7 @@
 # climate_controller-simulator
+
 Simulador, feito em Python 3.6, de um protótipo de climatizador feito enquanto eu estagiava no Hospital Martagão Gesteira, em 2017.
+
 
 ## Iniciando
 
@@ -10,7 +12,7 @@ Eu também empacotei o script e os módulos em um binário para Windows.
 
 #### Caso você não tenha escolhido baixar o binário - e sim o script... baixe o PIP para Python 3 antes. 
 
-Se vire e dê seus pulos.
+[Se vire e dê seus pulos](https://pip.pypa.io/en/stable/installing/).
 Você vai precisar importar os seguintes módulos:
 
 Em uma máquina *nix/BSD:

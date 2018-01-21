@@ -8,7 +8,7 @@ Simulador, feito em Python 3.6, de um protótipo de climatizador feito enquanto 
 
 Baixe o script em algum lugar do seu computador.
 
-Eu também empacotei o script e os módulos em um binário para Windows.
+Eu também empacotei o script e os módulos em um binário para Windows. [DOWNLOAD](https://github.com/requeijaum/climate_controller-simulator/blob/master/climate_controller-simulator-win32-bin.zip)
 
 ---------------------------
 

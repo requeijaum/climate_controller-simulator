@@ -38,13 +38,13 @@ Caso ocorra algum problema: verifique as issues desse repositório.
 
 --------------------------
 
-## Eu uso Windows !
+### Eu uso Windows !
 
 Eu desenvolvi esse simulador utilizando o Mac OS X 10.5 com Python 3. A maneira dele tratar a porta serial e o protocolo RFCOMM diferem do Windows. Verifique [esta issue](https://github.com/requeijaum/climate_controller-simulator/issues/1) caso você esteja tendo problemas.
 
 --------------------------
 
-## root ou privilégios de administrador podem ser necessários
+### Root/privilégios de administrador podem ser necessários
 
 Eu tive problemas com o pySerial tentando acessar as portas seriais sem os privilégios necessários de usuário. Esse comportamento pode variar. Por isso: recomendo executar o script como super-usuário/administrador/root.
 
@@ -65,7 +65,7 @@ Enviando "{ "t3":23 }" altera o valor de temperatura máxima.
 #### 5 - Parabéns!
 
 --------------------------------
-### Referência do JSON
+## Referência do JSON
 
 ```javascript
 json_main = {
@@ -113,5 +113,5 @@ Faça o que quiser. Mas leia a licença --> [LICENSE]
 ## Agradecimentos
 
 * Obrigado StackOverflow - por existir
-* Obrigado Miquéias Vasconcelos por me iniciar no mundo do Python
-
+* Obrigado Miquéias Vasconcelos por me iniciar no mundo do Python.
+* Obrigado Victor Ben-Hur pela oportunidade e pelo desafio de testar meus conhecimentos.

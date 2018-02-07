@@ -33,6 +33,14 @@ sudo -H python3 -m pip install serial.tools.list_ports
 
 
 Caso dê tudo certo: o script vai executar normalmente e você não terá nenhum aviso de erro por falta de módulos não-importados.
+Caso ocorra algum problema: verifique as issues desse repositório. 
+
+
+--------------------------
+
+## Eu uso Windows !
+
+Eu desenvolvi esse simulador utilizando o Mac OS X 10.5 com Python 3. A maneira dele tratar a porta serial e o protocolo RFCOMM diferem do Windows. Verifique [esta issue](https://github.com/requeijaum/climate_controller-simulator/issues/1) caso você esteja tendo problemas.
 
 ---------------------------
 
@@ -83,6 +91,7 @@ json_main = {
 
 
 ---------------------
+
 
 ## Construído com:
 

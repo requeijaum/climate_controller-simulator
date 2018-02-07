@@ -42,6 +42,12 @@ Caso ocorra algum problema: verifique as issues desse repositório.
 
 Eu desenvolvi esse simulador utilizando o Mac OS X 10.5 com Python 3. A maneira dele tratar a porta serial e o protocolo RFCOMM diferem do Windows. Verifique [esta issue](https://github.com/requeijaum/climate_controller-simulator/issues/1) caso você esteja tendo problemas.
 
+--------------------------
+
+## root ou privilégios de administrador podem ser necessários
+
+Eu tive problemas com o pySerial tentando acessar as portas seriais sem os privilégios necessários de usuário. Esse comportamento pode variar. Por isso: recomendo executar o script como super-usuário/administrador/root.
+
 ---------------------------
 
 ## Rodando

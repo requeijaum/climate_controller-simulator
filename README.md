@@ -95,6 +95,9 @@ json_main = {
 * "tt" é um número que representa os minutos de limiar da operação do climatizador;
 
 
+### Sobre o buffer de recepção
+
+É importante usar "\n" no início de cada comando a enviar - pois eu implementei um algoritmo que apenas seleciona o último comando recebido, dentro do espaço de tempo para receber. Isso evita algum travamento lógico ou erro na decodificação do JSON caso hajam vários comandos recebidos rapidamente ainda no buffer.
 
 ---------------------
 

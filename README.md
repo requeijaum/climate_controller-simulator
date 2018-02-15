@@ -94,6 +94,7 @@ json_main = {
 * "t[1,2,3]" são números inteiros de 2 algarismos que representam temperaturas em graus Celsius - mínima, atual e máxima, respectivamente;
 * "tt" é um número que representa os minutos de limiar da operação do climatizador;
 
+------
 
 ### Sobre o buffer de recepção
 

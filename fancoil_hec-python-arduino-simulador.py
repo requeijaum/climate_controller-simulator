@@ -20,6 +20,8 @@ ser			= ""
 lista       = []
 connected   = []
 
+
+lista_recebido = ""
 texto_recebido = ""
 texto_retornar = ""
 
@@ -154,18 +156,21 @@ def enviar(texto_enviado):
 
 
 def receber():
-	#global texto_recebido
+	global texto_recebido
 	global texto_retornar
+	global lista_recebido
 	
 	texto_retornar = ser.read(size=256) #nao precisa de bytearray...
 	
 	time.sleep(1/4)	
 	
-	#lista_recebido = texto_recebido.splitlines()
+	#implementei split em jsinho
+
+	#if "{" and "}" in texto_recebido :
+	#	lista_recebido = texto_recebido.split( texto_recebido.index("}") )
 
 	#print("   lista_recebido: " + str(lista_recebido))
 
-	#lista_recebido: [bytearray(b'*'), bytearray(b'*'), bytearray(b'MODEL RF303 VERSION  1.10')]
 
 	#for a in range(0, len(lista_recebido)):
 	
@@ -173,9 +178,9 @@ def receber():
 
 
 	ser.flush()
-	#texto_recebido = ""
 	
 	return texto_retornar
+	texto_recebido = ""
 
 	
 def sair() :
@@ -280,7 +285,11 @@ while (loop) :
 	ser.flush()
 	recebido = receber()
 	
-	recebido_str = recebido.decode()
+	#tentar implementar error handler em caracter unicode invalido
+	#caracter invalido 
+	#.decode() estava sem argumentos, na versão anterior
+
+	recebido_str = recebido.decode(errors="replace")
 	
 	
 	#remover tudo depois de "}{" , no caso de apertar temps varias vezes
@@ -290,10 +299,10 @@ while (loop) :
 	#vou reprogramar o app pra enviar os 4 de vez em um objeto so
 		
 	jsinho = recebido_str.split("\n")
-	print(jsinho)
+	print("jsinho = " + str(jsinho))
+
 	recebido_str = jsinho[len(jsinho)-1]
-		
-	print("recebido_str" + recebido_str)
+	print("recebido_str = " + recebido_str)
 	
 	if (len(recebido_str) > 4) :
 	

@@ -119,3 +119,4 @@ Faça o que quiser. Mas leia a licença --> [LICENSE]
 * Obrigado StackOverflow - por existir
 * Obrigado Miquéias Vasconcelos por me iniciar no mundo do Python.
 * Obrigado Victor Ben-Hur pela oportunidade e pelo desafio de testar meus conhecimentos.
+ 

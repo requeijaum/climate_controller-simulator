@@ -16,6 +16,12 @@ Eu também empacotei o script e os módulos em um binário para Windows. [DOWNLO
 
 #### Caso você não tenha escolhido baixar o binário - e sim o script... baixe o PIP para Python 3 antes. 
 
+```
+sudo python3 -m pip install -r requirements
+```
+
+#### Caso você tenha problemas:
+
 [Se vire e dê seus pulos](https://pip.pypa.io/en/stable/installing/).
 Você vai precisar importar os seguintes módulos:
 
@@ -29,6 +35,15 @@ Pode existir ainda a necessidade de importar o serial.tools.list_ports:
 
 ```
 sudo -H python3 -m pip install serial.tools.list_ports
+```
+
+Em uma máquina Windows:
+```
+#CMD.exe invocado como administrador e mandar ver:
+python3 -m pip install pySerial simplejson 
+
+#e o serial.tools.list_ports, caso vocë precise
+
 ```
 
 

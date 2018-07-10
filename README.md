@@ -1,6 +1,7 @@
 # climate_controller-simulator
 
-Simulador, feito em Python 3.6, de um protótipo de climatizador feito enquanto eu estagiava no Hospital Martagão Gesteira, em 2017.
+Simulador, feito em Python 3, de um protótipo de climatizador feito 
+enquanto eu estagiava no Hospital Martagão Gesteira, em 2017.
 
 --------------------------------
 
